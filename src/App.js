@@ -97,15 +97,13 @@ function App() {
               <h3>#{currentPuzzle.Id} - {currentPuzzle.Date}</h3>
             </Col>
           </Row>
-          <Row className='py-5'>
-            <Col sm={2} className='text-start'>
-              <Button variant="secondary" onClick={hintLeft} disabled={hintIndex == 0}>&lt;</Button>{' '}
+          <Row className='hints-body py-5'>
+            <Col xs={1}>
+              <Button variant="secondary" className='prev-button' onClick={hintLeft} disabled={hintIndex == 0}>&lt;</Button>{' '}
+              <Button variant="secondary" className='next-button' onClick={hintRight} disabled={hintIndex == 2 || guesses.length < hintIndex + 1}>&gt;</Button>{' '}
             </Col>
-            <Col sm={8} className='text-center'>
+            <Col xs={10} className='text-center'>
               <h2 id='activeHint'>{hints[hintIndex]}</h2>
-            </Col>
-            <Col sm={2} className='text-end'>
-              <Button variant="secondary" onClick={hintRight} disabled={hintIndex == 2 || guesses.length < hintIndex + 1}>&gt;</Button>{' '}
             </Col>
           </Row>
           <Row className='text-center mb-2'>

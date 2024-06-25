@@ -22,12 +22,18 @@ const ScoreModal = ({ show, onClose, hasWon, guesses, answer, children }) => {
         setEndMessage(tempMessage)
     }, [guesses])
 
+    const handleOutsideClick = (e) => {
+        if (e.target === e.currentTarget) {
+            onClose();
+        }
+    };
+
     if (!show) {
         return null;
     }
 
     return (
-        <div className="score-modal-overlay">
+        <div className="score-modal-overlay" onClick={handleOutsideClick}>
             <div className="score-modal-content">
                 <button className="score-modal-close" onClick={onClose}>X</button>
 

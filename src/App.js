@@ -12,9 +12,9 @@ import { faCircle } from '@fortawesome/free-solid-svg-icons';
 
 import './App.css'
 import users from './Data/users';
-import puzzles from './Data/puzzles';
+import {getCurrentPuzzle} from './Data/puzzles';
 
-let currentPuzzle = puzzles[puzzles.length - 1];
+let currentPuzzle = getCurrentPuzzle();
 let hintIndex = 0;
 
 function App() {

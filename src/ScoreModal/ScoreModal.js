@@ -16,7 +16,7 @@ const ScoreModal = ({ show, onClose, hasWon, guesses, answer, children }) => {
         var tempMessage = "";
 
         guesses.forEach(guess => {
-            tempMessage += (guess === answer ? "🟩" : "🟥")
+            tempMessage += (guess === answer ? String.fromCodePoint("0x1F7E9") : String.fromCodePoint("0x1F7E5"))
         });
 
         setEndMessage(tempMessage)

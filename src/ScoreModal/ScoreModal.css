@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
 }
 
 .score-modal-content {
@@ -17,13 +18,23 @@
     position: relative;
     width: 500px;
     max-width: 80%;
-    z-index: 1000;
+    z-index: 1001;
 }
 
 .score-modal-close {
     position: absolute;
     top: 10px;
     right: 10px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.score-modal-copy {
+    position: absolute;
+    top: 10px;
+    right: 50px;
     background: none;
     border: none;
     font-size: 16px;

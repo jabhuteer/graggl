@@ -81,7 +81,7 @@ function App() {
         guesses={guesses}
         answer={currentPuzzle["Answer"]}
         onClose={() => setShowScore(false)}>
-          {"GRAGGL #" + currentPuzzle["Id"] + " - " + guesses.length + "/" + hints.length}
+          {"GRAGGL #" + currentPuzzle["Id"] + " - " + (hasWon ? guesses.length : "X") + "/" + hints.length}
       </ScoreModal>
       <Row>
         <Col sm={1}></Col>

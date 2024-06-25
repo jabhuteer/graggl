@@ -6,16 +6,18 @@ export const puzzles =
             "Id": "1",
             "Name": "GRAGGL TEST",
             "Date": "6/24/2024",
+            "Answer": "Sacha",
             "Hints": [
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                "Blazblue isn't even real it can't hurt you",
-                "I liverd bitch"
+                "Happy birthday Liz. Here's your present :dirt:",
+                "Oh it would be so funny to make a \"graggle\" where u have to guess which server member sent a series of messages"
             ]
         },
         {
             "Id": "357894",
             "Name": "GRAGG HARDER",
             "Date": "6/25/2024",
+            "Answer": "Jab",
             "Hints": [
                 "test",
                 "small hint",
@@ -26,10 +28,11 @@ export const puzzles =
             "Id": "2",
             "Name": "GRAGG HARDER",
             "Date": "6/29/2024",
+            "Answer": "Jab",
             "Hints": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                "small hint",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                "i'm trying to be more misogynistic this year \u{1f60a}",
+                "Happy birthday Liz. Here's your present :dirt:",
+                "Oh it would be so funny to make a \"graggle\" where u have to guess which server member sent a series of messages"
             ]
         }
     ]

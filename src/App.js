@@ -170,7 +170,7 @@ function App() {
         </Col>
         <Col sm={4}>
           <Form.Select onChange={e => redirectToPuzzle(e.target.value)}>
-            <option disabled='true' selected='true'>View an archived puzzle...</option>
+            <option disabled={true} defaultValue={true}>View an archived puzzle...</option>
             {
               pastPuzzles.map((puzzle, index) => {
                 var redirect = new URL(window.location.href);
@@ -181,6 +181,9 @@ function App() {
               })
             }
           </Form.Select>
+        </Col>
+        <Col sm={6} className='text-end'>
+          Created by Jab and Sacha
         </Col>
       </Row>
     </Container>

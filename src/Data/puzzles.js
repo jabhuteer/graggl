@@ -49,7 +49,17 @@ export function getCurrentPuzzle() {
     if (currentPuzzle)
         return currentPuzzle;
     else
-        return puzzles[puzzles.length - 1];
+        return getLatestPuzzle();
+}
+
+export function getLatestPuzzle() {
+    const pastPuzzles = getAllPastPuzzles();
+
+    const latestPuzzle = pastPuzzles.reduce((a, b) => {
+        return new Date(a["Date"]) > new Date(b["Date"]) ? a : b
+    })
+
+    return latestPuzzle
 }
 
 export function getPuzzleById(id) {

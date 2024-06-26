@@ -39,17 +39,38 @@ export const puzzles =
 
 export function getCurrentPuzzle() {
     const currentPuzzle = puzzles.find((puzzle) => {
-        var puzzleDate = new Date(puzzle["Date"])
+        var puzzleDate = new Date(puzzle["Date"]);
         var today = new Date();
-        // Otherwise, precise time won't match and it won't find a match
         today.setHours(0, 0, 0, 0);
 
         return (puzzleDate.getTime() === today.getTime())
     })
 
     if (currentPuzzle)
-        return currentPuzzle
+        return currentPuzzle;
     else
-        return puzzles[puzzles.length - 1]
+        return puzzles[puzzles.length - 1];
+}
+
+export function getPuzzleById(id) {
+    for(let i = 0; i < puzzles.length; i++){
+        if(puzzles[i].Id === id){
+            return puzzles[i];
+        }
+    }
+    return getCurrentPuzzle();
+}
+
+export function getAllPastPuzzles() {
+    const pastPuzzles = [];
+    var today = new Date()
+    today.setHours(0, 0, 0, 0);
+    for(let i = 0; i < puzzles.length; i++){
+        var puzzleDate = new Date(puzzles[i].Date);
+        if(puzzleDate <= today){
+            pastPuzzles.push(puzzles[i])
+        }
+    }
+    return pastPuzzles;
 }
     

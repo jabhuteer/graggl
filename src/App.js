@@ -12,19 +12,26 @@ import { faCircle } from '@fortawesome/free-solid-svg-icons';
 
 import './App.css'
 import users from './Data/users';
-import {getCurrentPuzzle} from './Data/puzzles';
+import { getCurrentPuzzle } from './Data/puzzles';
+import { getPuzzleById } from './Data/puzzles';
+import { getAllPastPuzzles } from './Data/puzzles';
 
 import ScoreModal from './ScoreModal/ScoreModal';
+import { ButtonGroup } from 'react-bootstrap';
 
 // constants
 const wrong = "#ff0000";
 const right = "#00ff00";
 const empty = "000000";
+const search = window.location.search;
+const params = new URLSearchParams(search);
+const id = params.get('id');
+const pastPuzzles = getAllPastPuzzles();
 
 function App() {
 
   // state values
-  const [currentPuzzle, setCurrentPuzzle] = useState(getCurrentPuzzle());
+  const [currentPuzzle, setCurrentPuzzle] = useState(id ? getPuzzleById(id) : getCurrentPuzzle());
 
   const [hints, setHints] = useState([])
   const [hintIndex, setHintIndex] = useState(0);
@@ -73,6 +80,12 @@ function App() {
     }
   }
 
+  const redirectToPuzzle = (id) => {
+    var redirect = new URL(window.location.href);
+    redirect.searchParams.set('id', id)
+    window.location = redirect.href;
+  }
+
   return (
     <Container className='App mt-4'>
       <ScoreModal
@@ -100,10 +113,15 @@ function App() {
           <Row className='hints-body py-5'>
             <Col xs={1}>
               <Button variant="secondary" className='prev-button' onClick={hintLeft} disabled={hintIndex == 0}>&lt;</Button>{' '}
-              <Button variant="secondary" className='next-button' onClick={hintRight} disabled={hintIndex == 2 || guesses.length < hintIndex + 1}>&gt;</Button>{' '}
+              <Button variant="secondary" className='next-button' onClick={hintRight} disabled={hintIndex == hints.length - 1 || (!hasWon && guesses.length < hintIndex + 1)}>&gt;</Button>{' '}
             </Col>
-            <Col xs={10} className='text-center'>
+            <Col xs={10} className='text-start'>
               <h2 id='activeHint'>{hints[hintIndex]}</h2>
+            </Col>
+          </Row>
+          <Row>
+            <Col className='text-center'>
+              <h4>{hintIndex + 1}/{hints.length}</h4>
             </Col>
           </Row>
           <Row className='text-center mb-2'>
@@ -140,7 +158,9 @@ function App() {
               </Form.Select>
             </Col>
             <Col sm={4}>
-              <Button variant="primary" onClick={guess} disabled={guesses.length == hints.length || selected == "default" || hasWon}>Guess</Button>{' '}
+              <ButtonGroup>
+                <Button variant="primary" onClick={guess} disabled={guesses.length == hints.length || selected == "default" || hasWon}>Guess</Button>{' '}
+              </ButtonGroup>
             </Col>
           </Row>
         </Col>
@@ -148,8 +168,19 @@ function App() {
       <Row>
         <Col sm={1}>
         </Col>
-        <Col sm={10}>
-          Archive Placeholder
+        <Col sm={4}>
+          <Form.Select onChange={e => redirectToPuzzle(e.target.value)}>
+            <option disabled='true' selected='true'>View an archived puzzle...</option>
+            {
+              pastPuzzles.map((puzzle, index) => {
+                var redirect = new URL(window.location.href);
+                redirect.searchParams.set('id', puzzle.Id)
+                return (
+                  <option value={puzzle.Id}>{puzzle.Name} - #{puzzle.Id} - {puzzle.Date}</option>
+                );
+              })
+            }
+          </Form.Select>
         </Col>
       </Row>
     </Container>

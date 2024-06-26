@@ -169,8 +169,8 @@ function App() {
         <Col sm={1}>
         </Col>
         <Col sm={4}>
-          <Form.Select onChange={e => redirectToPuzzle(e.target.value)}>
-            <option disabled={true} defaultValue={true}>View an archived puzzle...</option>
+          <Form.Select onChange={e => redirectToPuzzle(e.target.value)} defaultValue="default">
+            <option disabled={true} value="default">View an archived puzzle...</option>
             {
               pastPuzzles.map((puzzle, index) => {
                 var redirect = new URL(window.location.href);

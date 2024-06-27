@@ -4,67 +4,88 @@ export default
     [
         {
             "name": "Jab",
-            "avatar": "Jab.png"
+            "avatar": "Jab.png",
+            "internalid": 1
         },
         {
             "name": "Sacha",
-            "avatar": "Sacha.jpg"
+            "avatar": "Sacha.jpg",
+            "internalid": 2
         },
         {
-            "name": "Kelli"
+            "name": "Kelli",
+            "internalid": 3
         },
         {
-            "name": "Bared"
+            "name": "Bared",
+            "internalid": 4
         },
         {
-            "name": "Boss"
+            "name": "Boss",
+            "internalid": 5
         },
         {
-            "name": "Liz"
+            "name": "Liz",
+            "internalid": 6
         },
         {
-            "name": "Vetrix"
+            "name": "Vetrix",
+            "internalid": 7
         },
         {
-            "name": "Riley"
+            "name": "Riley",
+            "internalid": 8
         },
         {
-            "name": "Rose"
+            "name": "Rose",
+            "internalid": 9
         },
         {
-            "name": "Corvus"
+            "name": "Corvus",
+            "internalid": 10
         },
         {
-            "name": "Doot"
+            "name": "Doot",
+            "internalid": 11
         },
         {
-            "name": "Twi"
+            "name": "Twi",
+            "internalid": 12
         },
         {
-            "name": "Axa"
+            "name": "Axa",
+            "internalid": 13
         },
         {
-            "name": "Strata"
+            "name": "Strata",
+            "internalid": 14
         },
         {
-            "name": "Garfield"
+            "name": "Garfield",
+            "internalid": 15
         },
         {
-            "name": "Cheez"
+            "name": "Cheez",
+            "internalid": 16
         },
         {
-            "name": "Rin"
+            "name": "Rin",
+            "internalid": 17
         },
         {
-            "name": "Abdur"
+            "name": "Abdur",
+            "internalid": 18
         },
         {
-            "name": "NTO"
+            "name": "NTO",
+            "internalid": 19
         },
         {
-            "name": "Ren"
+            "name": "Ren",
+            "internalid": 20
         },
         {
-            "name": "Nancy"
+            "name": "Nancy",
+            "internalid": 21
         },
     ]

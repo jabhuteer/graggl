@@ -352,9 +352,9 @@ export function getAllPastPuzzles() {
     today.setHours(0, 0, 0, 0);
     for(let i = 0; i < puzzles.length; i++){
         var puzzleDate = new Date(puzzles[i].Date);
-        //if(puzzleDate <= today){
+        if(puzzleDate <= today){
             pastPuzzles.push(puzzles[i])
-        //}
+        }
     }
     return pastPuzzles;
 }  

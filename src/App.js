@@ -36,8 +36,18 @@ function getHintDiscordComponents(hint) {
   return (
     <DiscordMessages>
       {hint.map((message, i) => {
+        const lines = message.Text.split("##");
           return (
-            <DiscordMessage author={message.User} avatar={message.User === 'Suspect' ? redavatar : blueavatar}>{message.Text}</DiscordMessage>
+            <DiscordMessage author={message.User} avatar={message.User === 'Suspect' ? redavatar : blueavatar}>
+                {lines.map((line, il) => {
+                return (
+                  <>
+                    {line}
+                    <br/>
+                  </>
+                )
+              })}
+            </DiscordMessage>
           )
         })
       }
@@ -174,9 +184,9 @@ function App() {
             </Col>
             <Col sm={4}>
               <Form.Select value={selected} onChange={e => setSelected(e.target.value)}>
-                <option value="default">Select a Graggler</option>
+                <option disabled={true} value="default">Select a Graggler</option>
                 {
-                  users.map((user, index) => {
+                  users.sort((a, b) => a.name.localeCompare(b.name)).map((user, index) => {
                     return (
                       <option value={user.name}>{user.name}</option>
                     );

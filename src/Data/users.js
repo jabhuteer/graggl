@@ -89,7 +89,7 @@ export default
             "internalid": 21
         },
         {
-            "name": "qrql",
+            "name": "QRQL",
             "internalid": 22
         },
         {
@@ -118,6 +118,6 @@ export default
         },
         {
             "name": "Izy",
-            "internalid": 28
+            "internalid": 29
         },
     ]

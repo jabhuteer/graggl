@@ -37,7 +37,7 @@ export default
             "internalid": 8
         },
         {
-            "name": "Rose",
+            "name": "Raven",
             "internalid": 9
         },
         {
@@ -87,5 +87,21 @@ export default
         {
             "name": "Nancy",
             "internalid": 21
+        },
+        {
+            "name": "qrql",
+            "internalid": 22
+        },
+        {
+            "name": "Toto",
+            "internalid": 23
+        },
+        {
+            "name": "Cammy",
+            "internalid": 24
+        },
+        {
+            "name": "Syco",
+            "internalid": 25
         },
     ]

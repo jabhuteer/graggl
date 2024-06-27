@@ -9,5 +9,8 @@ export default
         {
             "name": "Sacha",
             "avatar": "Sacha.jpg"
+        },
+        {
+            "name": "Kelli"
         }
     ]

@@ -4,18 +4,18 @@ export const puzzles =
     [
         {
             "Id": "1",
-            "Name": "GRAGGL TEST",
+            "Name": "PROOF OF CONCEPT",
             "Date": "6/24/2024",
             "Answer": "Jab",
             "Hints": [
                 [
                     {
                         "User": "Witness",
-                        "Text": "test witness message"
+                        "Text": "next time vetrix i'll need to call you by your full name + your credit card detail"
                     },
                     {
                         "User": "Suspect",
-                        "Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                        "Text": "Remember when you doxxed me in ggst cord"
                     },
                 ],
                 [

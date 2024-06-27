@@ -104,4 +104,20 @@ export default
             "name": "Syco",
             "internalid": 25
         },
+        {
+            "name": "Panned",
+            "internalid": 26
+        },
+        {
+            "name": "Canti",
+            "internalid": 27
+        },
+        {
+            "name": "Andy",
+            "internalid": 28
+        },
+        {
+            "name": "Izy",
+            "internalid": 28
+        },
     ]

@@ -114,7 +114,9 @@ function App() {
         hasWon={hasWon}
         guesses={guesses}
         answer={currentPuzzle["Answer"]}
-        onClose={() => setShowScore(false)}>
+        onClose={() => setShowScore(false)}
+        copyText={"[GRAGGL #" + currentPuzzle["Id"] + "](" + window.location.href + ") - " + (hasWon ? guesses.length : "X") + "/" + hints.length}
+        >
           {"GRAGGL #" + currentPuzzle["Id"] + " - " + (hasWon ? guesses.length : "X") + "/" + hints.length}
       </ScoreModal>
       <Row>

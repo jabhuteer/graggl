@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom'
+import { DiscordMessage, DiscordMessages } from '@danktuary/react-discord-message'
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -19,6 +20,9 @@ import { getAllPastPuzzles } from './Data/puzzles';
 import ScoreModal from './ScoreModal/ScoreModal';
 import { ButtonGroup } from 'react-bootstrap';
 
+import blueavatar from './Data/avatars/blue.png'
+import redavatar from './Data/avatars/red.png'
+
 // constants
 const wrong = "#ff0000";
 const right = "#00ff00";
@@ -27,6 +31,19 @@ const search = window.location.search;
 const params = new URLSearchParams(search);
 const id = params.get('id');
 const pastPuzzles = getAllPastPuzzles();
+
+function getHintDiscordComponents(hint) {
+  return (
+    <DiscordMessages>
+      {hint.map((message, i) => {
+          return (
+            <DiscordMessage author={message.User} avatar={message.User === 'Suspect' ? redavatar : blueavatar}>{message.Text}</DiscordMessage>
+          )
+        })
+      }
+    </DiscordMessages>
+  );
+}
 
 function App() {
 
@@ -55,7 +72,11 @@ function App() {
 
   // Initializes the hints after currentPuzzle has finished loading
   useEffect(() => {
-    setHints(currentPuzzle["Hints"]);
+    let hintComponents = [];
+    for(let i = 0; i < currentPuzzle.Hints.length; i++){
+      hintComponents.push(getHintDiscordComponents(currentPuzzle.Hints[i]))
+    }
+    setHints(hintComponents);
     setHintIndex(0)
   }, [currentPuzzle])
 
@@ -110,38 +131,42 @@ function App() {
               <h3>#{currentPuzzle.Id} - {currentPuzzle.Date}</h3>
             </Col>
           </Row>
-          <Row className='hints-body py-5'>
-            <Col xs={1}>
-              <Button variant="secondary" className='prev-button' onClick={hintLeft} disabled={hintIndex == 0}>&lt;</Button>{' '}
+          <div className='game-body'>
+            <Row className='hints-body py-5'>
+              <Col xs={12} className='text-start'>
+                <h2 id='activeHint'>{hints[hintIndex]}</h2>
+              </Col>
+            </Row>
+            <Row>
+              <Col sm={1} xs={4} >
+                <Button variant="secondary" className='prev-button' onClick={hintLeft} disabled={hintIndex == 0}>&lt;</Button>{' '}
+              </Col>
+              <Col sm={10} xs={4} className='text-center'>
+                <h4>{hintIndex + 1}/{hints.length}</h4>
+              </Col>
+              <Col sm={1} xs={4}>
               <Button variant="secondary" className='next-button' onClick={hintRight} disabled={hintIndex == hints.length - 1 || (!hasWon && guesses.length < hintIndex + 1)}>&gt;</Button>{' '}
-            </Col>
-            <Col xs={10} className='text-start'>
-              <h2 id='activeHint'>{hints[hintIndex]}</h2>
-            </Col>
-          </Row>
-          <Row>
-            <Col className='text-center'>
-              <h4>{hintIndex + 1}/{hints.length}</h4>
-            </Col>
-          </Row>
-          <Row className='text-center mb-2'>
-            <Col sm={3}>
-            </Col>
-            
-            {hints.map((hint, i) => {
-              var color = empty;
+              </Col>
+            </Row>
+            <Row className='text-center mb-2'>
+              <Col sm={3}>
+              </Col>
+              
+              {hints.map((hint, i) => {
+                var color = empty;
 
-              if (i < guesses.length)
-                color = (guesses[i] === currentPuzzle["Answer"] ? right : wrong)
+                if (i < guesses.length)
+                  color = (guesses[i] === currentPuzzle["Answer"] ? right : wrong)
 
-              return (
-                <Col sm={2}>
-                  <FontAwesomeIcon icon={faCircle} style={{color: color}}/>
-                </Col>
-              )
-            })}
+                return (
+                  <Col sm={2}>
+                    <FontAwesomeIcon icon={faCircle} style={{color: color}}/>
+                  </Col>
+                )
+              })}
 
-          </Row>
+            </Row>
+          </div>
           <Row className='mb-2'>
             <Col sm={2}>
             </Col>
@@ -165,7 +190,15 @@ function App() {
           </Row>
         </Col>
       </Row>
-      <Row>
+      <Row className='mt-2'>
+        <Col sm={1}>
+        </Col>
+        <Col sm={10} className='text-center'>
+            How To Play:
+            Identify the Suspect based on their Discord messages. Each guess gives you another clue.
+        </Col>
+      </Row>
+      <Row className='mt-2'>
         <Col sm={1}>
         </Col>
         <Col sm={4}>
@@ -182,7 +215,7 @@ function App() {
             }
           </Form.Select>
         </Col>
-        <Col sm={6} className='text-end'>
+        <Col sm={6} className='text-sm-end'>
           Created by Jab and Sacha
         </Col>
       </Row>

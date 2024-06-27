@@ -184,7 +184,11 @@ function App() {
             </Col>
             <Col sm={4}>
               <ButtonGroup>
-                <Button variant="primary" onClick={guess} disabled={guesses.length == hints.length || selected == "default" || hasWon}>Guess</Button>{' '}
+                {
+                  hasWon || guesses.length == hints.length ?
+                  <Button variant="primary" onClick={() => setShowScore(true)}>Check result</Button> :
+                  <Button variant="primary" onClick={guess} disabled={guesses.length == hints.length || selected == "default" || hasWon}>Guess</Button>
+                }
               </ButtonGroup>
             </Col>
           </Row>

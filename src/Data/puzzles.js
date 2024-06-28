@@ -143,6 +143,104 @@ export const puzzles =
             ]
         },
         {
+            "Id": "4",
+            "Name": "Authority",
+            "Date": "7/02/2024",
+            "Answer": "Kelli",
+            "Hints": [
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "Thank you for following that rule, death threats are fine though yeah"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "People hate Strive cause it kinda blows waiting for 20 seconds for a blockstring to end"
+                    },
+                    {
+                        "User": "Witness",
+                        "Text": "what if i told you you can press a button by like the third move"
+                    },
+                    {
+                        "User": "Suspect",
+                        "Text": "What if I paid Abdur 1000 dollars to execute you on the side of the road"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "Next french fuck gets shot"
+                    },
+                    {
+                        "User": "Witness",
+                        "Text": "???"
+                    },
+                    {
+                        "User": "Suspect",
+                        "Text": "I am making this an anti-free speech zone. No speaking french"
+                    },
+                ],
+            ]
+        },
+        {
+            "Id": "5",
+            "Name": "Success",
+            "Date": "7/03/2024",
+            "Answer": "Twi",
+            "Hints": [
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "fuck street fighter 6 fight in the streets to get a JOB THAT PAYS 6 FIGURES"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "to be fair decadent French nobility knew how to party and build big rooms to party in##hon hon hon i do not care about le poor! put three more painstakingly painted greek mythic scenes on le ceiling!"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "I HAVE THE PLAGUE I CANT GO TO WORK TILL LIKE NEXT WEEK"
+                    },
+                ],
+            ]
+        },
+        {
+            "Id": "6",
+            "Name": "Yearning",
+            "Date": "7/04/2024",
+            "Answer": "Abdur",
+            "Hints": [
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "Watching over my little cousins##This kid asks \"why don't you have a wife\"😭😭😭"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "Got spam called and I ended the call with \"ok love you bye\"##It's over for me"
+                    },
+                ],
+                [
+                    {
+                        "User": "Witness",
+                        "Text": "ugh I'm overthinking this stupid text to send to my boss"
+                    },
+                    {
+                        "User": "Suspect",
+                        "Text": "Start it with, \" I love you\" then do whatever you want after##Y'all ever say \"love you\" to delivery people?"
+                    },
+                ],
+            ]
+        },
+        {
             "Id": "12",
             "Name": "PG13",
             "Date": "7/10/2024",

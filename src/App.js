@@ -144,6 +144,11 @@ function App() {
             </Col>
           </Row>
           <div className='game-body'>
+            <Row hidden={ (guesses.length >= hints.length) || hasWon ? false : true }>
+              <Col>
+                <h2>{currentPuzzle.Answer}</h2>
+              </Col>
+            </Row>
             <Row className='hints-body py-5'>
               <Col xs={12} className='text-start'>
                 <h2 id='activeHint'>{hints[hintIndex]}</h2>

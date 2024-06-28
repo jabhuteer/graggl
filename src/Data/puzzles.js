@@ -493,6 +493,32 @@ export const puzzles =
             ]
         },
         {
+            "Id": "24",
+            "Name": "Elden Ring Opinions",
+            "Date": "7/21/2024",
+            "Answer": "NTO",
+            "Hints": [
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "i like xc3 but anyone who genuinely thinks it shoulda beat elden ring is out of their fucking gourd"
+                    },
+                ],
+                [
+		            {
+                        "User": "Suspect",
+                        "Text": "elden ring is literally just dark souls 2 with the budget"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "i got SO much shit for saying elden ring gave me ds2 vibes lmaooo"
+                    },
+                ],
+            ]
+        },
+        {
             "Id": "26",
             "Name": "Fight",
             "Date": "7/24/2024",
@@ -514,6 +540,32 @@ export const puzzles =
                     {
                         "User": "Suspect",
                         "Text": "this started bc someone said melty blood has no shotos"
+                    },
+                ],
+            ]
+        },
+        {
+            "Id": "7",
+            "Name": "First 3 Messages",
+            "Date": "7/5/2024",
+            "Answer": "NTO",
+            "Hints": [
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "fuck"
+                    },
+                ],
+                [
+		            {
+                        "User": "Suspect",
+                        "Text": "i did get hacked wtf i have a porn role"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "ooooh i get it"
                     },
                 ],
             ]
@@ -564,5 +616,5 @@ export function getAllPastPuzzles() {
             pastPuzzles.push(puzzles[i])
         }
     }
-    return pastPuzzles;
+    return pastPuzzles.sort((a, b) => new Date(a.Date) - new Date(b.Date));
 }  

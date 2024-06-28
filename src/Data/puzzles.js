@@ -33,6 +33,116 @@ export const puzzles =
             ]
         },
         {
+            "Id": "1",
+            "Name": "Upper echelon",
+            "Date": "6/29/2024",
+            "Answer": "Andy",
+            "Hints": [
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "If you ain't paying artists with exposure how are you ever gonna make it big in this world?##That's money you could be using starting a business"
+                    },
+                ],
+                [
+                    {
+                        "User": "Witness",
+                        "Text": "no but i was (hard working character, working class, doesnt even have the funds to buy proper shoes)"
+                    },
+                    {
+                        "User": "Suspect",
+                        "Text": "I think Ram is more upper class going through a naturalist phase##\"I gotta be one with nature\""
+                    },
+                ],
+                [
+                    {
+                        "User": "Witness",
+                        "Text": "i said it was undemocratic but we dont listen to poor ol sacha now do we..."
+                    },
+                    {
+                        "User": "Suspect",
+                        "Text": "Poor????? GET HIM"
+                    },
+                ],
+            ]
+        },
+        {
+            "Id": "2",
+            "Name": "Negativity",
+            "Date": "6/30/2024",
+            "Answer": "Doot",
+            "Hints": [
+                [
+                    {
+                        "User": "Witness",
+                        "Text": "Who's hype for the new season of nagatoro :3"
+                    },
+                    {
+                        "User": "Suspect",
+                        "Text": "gotta be the dudes who stack no paper and get no bitches collective"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "you’re literally playing sfv that’s an issue in itself"
+                    },
+                    {
+                        "User": "Witness",
+                        "Text": "it's a good game tho"
+                    },
+                    {
+                        "User": "Suspect",
+                        "Text": "yeah to people who play bad games"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "i only call games bad when it has shield and moondrive"
+                    },
+                ],
+            ]
+        },
+        {
+            "Id": "3",
+            "Name": "Jackass",
+            "Date": "7/01/2024",
+            "Answer": "Toto",
+            "Hints": [
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "the value of a bowl is the empty space within##think on that"
+                    },
+                    {
+                        "User": "Witness",
+                        "Text": "The value of a bowl is being able to contain stuff within it"
+                    },
+                    {
+                        "User": "Suspect",
+                        "Text": "yes because it's empty you fucking jackass"
+                    },
+                ],
+                [
+                    {
+                        "User": "Witness",
+                        "Text": "look i dont make the rules"
+                    },
+                    {
+                        "User": "Suspect",
+                        "Text": "you make the opinion though jackass"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "Sorry for calling you a jackass##I did mean it though"
+                    },
+                ],
+            ]
+        },
+        {
             "Id": "12",
             "Name": "PG13",
             "Date": "7/10/2024",

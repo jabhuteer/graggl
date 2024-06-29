@@ -599,7 +599,9 @@ export function getLatestPuzzle() {
 
 export function getPuzzleById(id) {
     for(let i = 0; i < puzzles.length; i++){
-        if(puzzles[i].Id === id){
+        var puzzleDate = new Date(puzzles[i].Date);
+        var today = new Date()
+        if(puzzles[i].Id === id && puzzleDate <= today){
             return puzzles[i];
         }
     }

@@ -124,4 +124,8 @@ export default
             "name": "Maki",
             "internalid": 30
         },
+        {
+            "name": "Arck",
+            "internalid": 31
+        },
     ]

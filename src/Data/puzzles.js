@@ -575,7 +575,11 @@ export const puzzles =
 export function getCurrentPuzzle() {
     const currentPuzzle = puzzles.find((puzzle) => {
         var puzzleDate = new Date(puzzle["Date"]);
-        var today = new Date();
+        // disgusting fix. absolutely awful. works though, forces time to PST for daily reset
+        // unfortunately Date() is 100% client-side so users can bruteforce the date by changing it on their PC anyway
+        var today = new Date(new Date().toLocaleString("en-US", {
+            timeZone: "America/Los_Angeles"
+          }))
         today.setHours(0, 0, 0, 0);
 
         return (puzzleDate.getTime() === today.getTime())
@@ -600,7 +604,9 @@ export function getLatestPuzzle() {
 export function getPuzzleById(id) {
     for(let i = 0; i < puzzles.length; i++){
         var puzzleDate = new Date(puzzles[i].Date);
-        var today = new Date()
+        var today = new Date(new Date().toLocaleString("en-US", {
+            timeZone: "America/Los_Angeles"
+          }))
         if(puzzles[i].Id === id && puzzleDate <= today){
             return puzzles[i];
         }
@@ -610,7 +616,9 @@ export function getPuzzleById(id) {
 
 export function getAllPastPuzzles() {
     const pastPuzzles = [];
-    var today = new Date()
+    var today = new Date(new Date().toLocaleString("en-US", {
+        timeZone: "America/Los_Angeles"
+      }))
     today.setHours(0, 0, 0, 0);
     for(let i = 0; i < puzzles.length; i++){
         var puzzleDate = new Date(puzzles[i].Date);

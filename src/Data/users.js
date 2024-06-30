@@ -128,4 +128,8 @@ export default
             "name": "Arck",
             "internalid": 31
         },
+        {
+            "name": "Creature",
+            "internalid": 32
+        },
     ]

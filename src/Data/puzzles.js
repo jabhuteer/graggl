@@ -241,6 +241,112 @@ export const puzzles =
             ]
         },
         {
+            "Id": "8",
+            "Name": "Gamer",
+            "Date": "7/06/2024",
+            "Answer": "Vetrix",
+            "Hints": [
+                [
+                    {
+                        "User": "Witness",
+                        "Text": "im literally italian"
+                    },
+                    {
+                        "User": "Suspect",
+                        "Text": "do you go mama mia super mario galaxy?"
+                    },
+                ],
+                [
+                    {
+                        "User": "Witness",
+                        "Text": "labbing fgs on the toilet is legit revolutionary"
+                    },
+                    {
+                        "User": "Suspect",
+                        "Text": "Toilet Umineko"
+                    },
+                    {
+                        "User": "Witness",
+                        "Text": "ive already read it.."
+                    },
+                    {
+                        "User": "Suspect",
+                        "Text": "But reading it in the toilets is a completely different experience"
+                    },
+                ],
+                [
+                    {
+                        "User": "Witness",
+                        "Text": "speaking of jrpgs y'all heard of Devil Survivor"
+                    },
+                    {
+                        "User": "Suspect",
+                        "Text": "persona 5 without the underage romance and confidants 😒"
+                    },
+                ],
+            ]
+        },
+        {
+            "Id": "9",
+            "Name": "Youth",
+            "Date": "7/07/2024",
+            "Answer": "Panned",
+            "Hints": [
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "If you don't like skibidi toilet you're a landlord basically"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "I'm sorry for sending the daigo may among us plushy when you said you weren't feeling well that was kind of mean"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "Oomfies I accidentally had to skip school today because I drank too much for religious reasons last night who wants to play strive"
+                    },
+                ],
+            ]
+        },
+        {
+            "Id": "10",
+            "Name": "Schemes",
+            "Date": "7/08/2024",
+            "Answer": "Canti",
+            "Hints": [
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "Gonna marry the neighborhood cougar and make her untimely death seem an accident"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "RISE MY CHILD##WHERES YOUR ANGER??"
+                    },
+                    {
+                        "User": "Witness",
+                        "Text": "I don’t like being angry"
+                    },
+                    {
+                        "User": "Suspect",
+                        "Text": "Me neither I feel bad"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "Sigma male is gender neutral"
+                    },
+                ],
+            ]
+        },
+        {
             "Id": "12",
             "Name": "PG13",
             "Date": "7/10/2024",

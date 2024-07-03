@@ -347,6 +347,44 @@ export const puzzles =
             ]
         },
         {
+            "Id": "11",
+            "Name": "Unique",
+            "Date": "7/09/2024",
+            "Answer": "Canti",
+            "Hints": [
+                [
+                    {
+                        "User": "Witness",
+                        "Text": "I've heard darius is the suka motion master :jamoe:"
+                    },
+                    {
+                        "User": "Suspect",
+                        "Text": "Im the choke master"
+                    },
+                ],
+                [
+                    {
+                        "User": "Witness",
+                        "Text": "im having a pizza##just cooked it"
+                    },
+                    {
+                        "User": "Suspect",
+                        "Text": "share?##👉👈"
+                    },
+                ],
+                [
+                    {
+                        "User": "Witness",
+                        "Text": "\"just making sure i dont fit in\" headass"
+                    },
+                    {
+                        "User": "Suspect",
+                        "Text": "I'm one in a krillion"
+                    },
+                ],
+            ]
+        },
+        {
             "Id": "12",
             "Name": "PG13",
             "Date": "7/10/2024",
@@ -600,26 +638,52 @@ export const puzzles =
         },
         {
             "Id": "24",
-            "Name": "Elden Ring Opinions",
-            "Date": "7/21/2024",
+            "Name": "Smash Brothers",
+            "Date": "7/22/2024",
             "Answer": "NTO",
             "Hints": [
                 [
                     {
                         "User": "Suspect",
-                        "Text": "i like xc3 but anyone who genuinely thinks it shoulda beat elden ring is out of their fucking gourd"
+                        "Text": "are you fuckers talking abt smash in my channel"
                     },
                 ],
                 [
 		            {
                         "User": "Suspect",
-                        "Text": "elden ring is literally just dark souls 2 with the budget"
+                        "Text": "I'm smashing my open mouth into a burger"
                     },
                 ],
                 [
                     {
                         "User": "Suspect",
-                        "Text": "i got SO much shit for saying elden ring gave me ds2 vibes lmaooo"
+                        "Text": "ordered some burgers at a place i never tried and man they have some good ass smash burgers"
+                    },
+                ],
+            ]
+        },
+        {
+            "Id": "25",
+            "Name": "Tweeter",
+            "Date": "7/23/2024",
+            "Answer": "Doot",
+            "Hints": [
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "twitter is playing their own ad videos before videos in the post i’m gonna kill elon musk"
+                    },
+                ],
+                [
+		            {
+                        "User": "Suspect",
+                        "Text": "refreshed twitter and apparently we’re about to have desktop quantum computers?"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "i played a bit of skugs a while ago and i only realized then why there was so many weirdos complaining about its censorship on twitter"
                     },
                 ],
             ]
@@ -646,6 +710,114 @@ export const puzzles =
                     {
                         "User": "Suspect",
                         "Text": "this started bc someone said melty blood has no shotos"
+                    },
+                ],
+            ]
+        },
+        {
+            "Id": "27",
+            "Name": "Tomato Lover",
+            "Date": "7/25/2024",
+            "Answer": "Toto",
+            "Hints": [
+                [
+		            {
+                        "User": "Suspect",
+                        "Text": "did you guys know tomatoes are probably from peru"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "did i tell you i detonated a tomato slicer about a month ago"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "cover it up.....wis your favorih tomato sahs"
+                    },
+                ],
+            ]
+        },
+        {
+            "Id": "28",
+            "Name": "Funny Green Plant",
+            "Date": "7/26/2024",
+            "Answer": "Rin",
+            "Hints": [
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "go smoker weed"
+                    },
+                ],
+                [
+		            {
+                        "User": "Witness",
+                        "Text": "I'd never source weed from whole Foods get real"
+                    },
+                    {
+                        "User": "Suspect",
+                        "Text": "id source weed from half foods personally"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "Yo I opened my microwave and there's a little bit of the plastic near the bottom of the door peeling off. If I eat these burritos and grow a third arm, call me Tripalm then im gonna go raid the capital to decriminalize weed and also have 3 arms while doing it"
+                    },
+                ],
+            ]
+        },
+        {
+            "Id": "29",
+            "Name": "Tomato Hater",
+            "Date": "7/27/2024",
+            "Answer": "Cammy",
+            "Hints": [
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "tomato soup tastes bad"
+                    },
+                ],
+                [
+		            {
+                        "User": "Suspect",
+                        "Text": "I don't like tomato the tomato but I do like tomato derivatives"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "I'll only eat tomatoes as like ketchup or a paste or a sauce or w/e"
+                    },
+                ],
+            ]
+        },
+        {
+            "Id": "30",
+            "Name": "Hog Wild",
+            "Date": "7/28/2024",
+            "Answer": "Strata",
+            "Hints": [
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "its crazy to me that like if you let a cute lil pink pig go out into the wild out of a farm itll start growing hair and tusks"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "spelunkers probably watch that movie about james franco cutting his arm off and go man i wish"
+                    },
+                ],
+                [
+		            {
+                        "User": "Suspect",
+                        "Text": "if cottagecore is where we got cottage cheese from the whole establishment needs to be burnt to the ground"
                     },
                 ],
             ]

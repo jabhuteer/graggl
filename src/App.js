@@ -146,7 +146,7 @@ function App() {
           <div className='game-body'>
             <Row hidden={ (guesses.length >= hints.length) || hasWon ? false : true }>
               <Col>
-                <h2>{currentPuzzle.Answer}</h2>
+                <h2>{guesses.length > 0 ? currentPuzzle.Answer : "Suspect"}</h2>
               </Col>
             </Row>
             <Row className='hints-body py-5'>

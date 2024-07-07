@@ -423,6 +423,124 @@ export const puzzles =
             ]
         },
         {
+            "Id": "13",
+            "Name": "Modern speech",
+            "Date": "7/11/2024",
+            "Answer": "Bared",
+            "Hints": [
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "it's awesome that there's two persona pics i can use to imply i'm about to say a slur"
+                    },
+                ],
+                [
+		            {
+                        "User": "Witness",
+                        "Text": "Like I don’t get how you’d want me to word this to be less problematic or conservative or whatever"
+                    },
+		            {
+                        "User": "Suspect",
+                        "Text": "you gotta word it progressive, my femcel gothmaxxing malewife would get perma blocked if she had esex with a cottagecore grungemode rando"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "Despite overwhelming evidence, many fans online argue that \"goku gets sweeped by luffy\" (twitter.com/ILoveNamiFeet/fdfh459bj2J)"
+                    },
+                ] 
+            ]
+        },
+        {
+            "Id": "14",
+            "Name": "Fighting",
+            "Date": "7/12/2024",
+            "Answer": "Toto",
+            "Hints": [
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "I don't actually have good neutral so I just try to confuse everyone involved"
+                    },
+                ],
+                [
+		            {
+                        "User": "Suspect",
+                        "Text": "yeah I'm GIFTED##Good at niche games##I##F##TADHD##E##Dumb"
+                    },
+                ],
+                [
+                    {
+                        "User": "Witness",
+                        "Text": "\"chaos so cheap\" my char does strike/throw and has no defense or mix or neutral"
+                    },
+                    {
+                        "User": "Suspect",
+                        "Text": "i've got the perpetual strive brainrot that makes me foam at the mouth when i hear chaos and this almost flew me into a rage at 5:42 in the morning"
+                    },
+                ],
+            ]
+        },
+        {
+            "Id": "15",
+            "Name": "Interjection",
+            "Date": "7/13/2024",
+            "Answer": "Corvus",
+            "Hints": [
+                [
+                    {
+                        "User": "Witness",
+                        "Text": "with juri i meaty with lights or medium punch because i can hitconfirm both"
+                    },
+                    {
+                        "User": "Suspect",
+                        "Text": "with juri u drool and slobber"
+                    },
+                ],
+                [
+		            {
+                        "User": "Witness A",
+                        "Text": "Yeah imma need a second opinion"
+                    },
+		            {
+                        "User": "Suspect",
+                        "Text": "im literally the second opinion"
+                    },
+		            {
+                        "User": "Witness A",
+                        "Text": "Third opinion then"
+                    },
+		            {
+                        "User": "Suspect",
+                        "Text": "mkay"
+                    },
+		            {
+                        "User": "Witness B",
+                        "Text": "You're so cringe"
+                    },
+		            {
+                        "User": "Suspect",
+                        "Text": "third opinion is here"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "theres much better ways to do it that would also make ur game healthier too"
+                    },
+                    {
+                        "User": "Witness",
+                        "Text": "Like?"
+                    },
+                    {
+                        "User": "Suspect",
+                        "Text": "\"like?\" mfers when they want to be annoying"
+                    },
+                ] 
+            ]
+        },
+        {
             "Id": "16",
             "Name": "Ryu",
             "Date": "7/14/2024",

@@ -966,6 +966,208 @@ export const puzzles =
                 ],
             ]
         },
+        {
+            "Id": "31",
+            "Name": "Woke",
+            "Date": "7/29/2024",
+            "Answer": "Liz",
+            "Hints": [
+                [
+                    {
+                        "User": "Witness",
+                        "Text": "The event started at midnight my time"
+                    },
+                    {
+                        "User": "Suspect",
+                        "Text": "Ugh woke liberals and their timezones 🙄"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "Barbie is woke as fuck they even have women in the movie"
+                    },
+                ],
+                [
+		            {
+                        "User": "Suspect",
+                        "Text": "Had to stop because a lifeguard told me it was \"not permitted\" and \"someone could get hurt\" fucking woke culture"
+                    },
+                ],
+            ]
+        },
+        {
+            "Id": "32",
+            "Name": "Violence",
+            "Date": "7/30/2024",
+            "Answer": "Cammy",
+            "Hints": [
+                [
+		            {
+                        "User": "Suspect",
+                        "Text": "remember, do not shoot the messenger stab them"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "we gotta try dosing bared on high amounts of psychadelics"
+                    },
+                ],
+                [
+                    {
+                        "User": "Witness",
+                        "Text": "What the fuck are we getting next Bill?"
+                    },
+                    {
+                        "User": "Suspect",
+                        "Text": "nothing, microsoft is just going to hire agents to stab you in the kidney"
+                    },
+                ],
+            ]
+        },
+        {
+            "Id": "33",
+            "Name": "Fearless",
+            "Date": "7/31/2024",
+            "Answer": "Ren",
+            "Hints": [
+                [
+                    {
+                        "User": "Witness",
+                        "Text": "chat if you could freeze time what would you do with it"
+                    },
+		            {
+                        "User": "Suspect",
+                        "Text": "TERRORISM 🗣️📢🔊"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "oh to be a unit commander of some kind##saying \"ITS A GOOD DAY TO DIE MEN\" has to feel so fucking good"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "smite is scary..."
+                    },
+                ],
+            ]
+        },
+        {
+            "Id": "34",
+            "Name": "$$$",
+            "Date": "8/01/2024",
+            "Answer": "Jab",
+            "Hints": [
+                [
+		            {
+                        "User": "Suspect",
+                        "Text": "🙄 okay mathcord riddle me this: how much paper do u stack"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "My new years resolution is to spend more money on gambling"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "Stop spending so much money on programmer socks"
+                    },
+                ],
+            ]
+        },
+        {
+            "Id": "35",
+            "Name": "Never Have I Ever",
+            "Date": "8/02/2024",
+            "Answer": "Strata",
+            "Hints": [
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "nah I've never been bit by ticks or leeches"
+                    },
+                ],
+                [
+		            {
+                        "User": "Suspect",
+                        "Text": "I've never had grits in my life"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "I've never in my years working retail ever had someone try to pay with a cheque"
+                    },
+                ],
+            ]
+        },
+        {
+            "Id": "36",
+            "Name": "Peak",
+            "Date": "8/03/2024",
+            "Answer": "Maki",
+            "Hints": [
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "PEAK IS BACK ON THE MENU"
+                    },
+                ],
+                [
+		            {
+                        "User": "Suspect",
+                        "Text": "hop on oblivion game is so peak"
+                    },
+                ],
+                [
+                    {
+                        "User": "Witness",
+                        "Text": "isnt monster the show about the doctor"
+                    },
+                    {
+                        "User": "Suspect",
+                        "Text": "yes##so peak..."
+                    },
+                ],
+            ]
+        },
+        {
+            "Id": "37",
+            "Name": "Cabypara",
+            "Date": "8/04/2024",
+            "Answer": "Twi",
+            "Hints": [
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "you... don't like capybaras?"
+                    },
+                ],
+                [
+                    {
+                        "User": "Witness",
+                        "Text": "bro thinks he's a capybara just chillin with the enemy"
+                    },
+		            {
+                        "User": "Suspect",
+                        "Text": "oh so the brazilian guy is a capybara huh"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "just teared up looking at a capybara idk why"
+                    },
+                ],
+            ]
+        },
     ]
 
 export function getCurrentPuzzle() {

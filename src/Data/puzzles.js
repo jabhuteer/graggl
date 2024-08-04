@@ -1168,6 +1168,156 @@ export const puzzles =
                 ],
             ]
         },
+        {
+            "Id": "38",
+            "Name": "Learning",
+            "Date": "8/05/2024",
+            "Answer": "Abdur",
+            "Hints": [
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "You don't need your smart shotgun with a joystick and hud to kill a pigeon right?"
+                    },
+                ],
+                [
+                    {
+                        "User": "Witness",
+                        "Text": "Transmisogyny is such a cool looking word##like that's a fucking combo"
+                    },
+		            {
+                        "User": "Suspect",
+                        "Text": "Transmisogyny sounds like some complex governmental maneuver that you have to learn for some political science major"
+                    },
+                ],
+                [
+                    {
+                        "User": "Witness A",
+                        "Text": "Are you pro or anti murder out of curiosity"
+                    },
+                    {
+                        "User": "Witness B",
+                        "Text": "I approve murder in certain cases"
+                    },
+                    {
+                        "User": "Suspect",
+                        "Text": "Yeah like when someone cuts you in line"
+                    },
+                ],
+            ]
+        },
+        {
+            "Id": "39",
+            "Name": "Work",
+            "Date": "8/06/2024",
+            "Answer": "Kelli",
+            "Hints": [
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "Spending 20 hours a day drawing in my office and only taking 4 ten minute breaks a day (for instant ramen and shitting), just so my manga can be marketed as \"please dunk on the Mangaka\""
+                    },
+                ],
+                [
+		            {
+                        "User": "Suspect",
+                        "Text": "At my desk for work but my cat has other plans"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "Exam: \"What are the advantages of a Binary Search Tree over a Binary Min-Heap\"##Me: \"using the second one proves you took this dogshit class\""
+                    },
+                ],
+            ]
+        },
+        {
+            "Id": "40",
+            "Name": "Hard worker",
+            "Date": "8/07/2024",
+            "Answer": "QRQL",
+            "Hints": [
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "i like it when i get to play a character who does one thing over and over and then I get to say \"im nice\""
+                    },
+                ],
+                [
+		            {
+                        "User": "Suspect",
+                        "Text": "i always end up playing mid tiers##it's not that i mean to, it just always works out my favorite characters are mid tiers"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "i wish any of my partners would be able to tod me##but all of my exes can't understand how cancels work"
+                    },
+                ],
+            ]
+        },
+        {
+            "Id": "41",
+            "Name": "Murder",
+            "Date": "8/08/2024",
+            "Answer": "Toto",
+            "Hints": [
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "i dont mean \"kill you\" in a sexy way I mean shoot your dog raid your fridge and sit you in a car in the garage with the engine on"
+                    },
+                ],
+                [
+		            {
+                        "User": "Suspect",
+                        "Text": "imagine being a caveman in caveman times and you like rip ass as an earthquake goes off and your caveman friends all kill you because they think you're a demon"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "what can you hope to do to me"
+                    },
+                    {
+                        "User": "Witness",
+                        "Text": "post you on reddit##now what can YOU hope to do to me huh"
+                    },
+                    {
+                        "User": "Suspect",
+                        "Text": "i dunno, doxx and kill you? i'm just spitballing though"
+                    },
+                ],
+            ]
+        },
+        {
+            "Id": "42",
+            "Name": "Confrontation",
+            "Date": "8/09/2024",
+            "Answer": "Cammy",
+            "Hints": [
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "currently malding over a children’s game like god intended"
+                    },
+                ],
+                [
+		            {
+                        "User": "Suspect",
+                        "Text": "THE DEVIL STARED ME IN THE FACE####I STARED BACK AND SHIT MYSELF"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "watching a guy across the street tear down a building with an excavator##god I wish that was me"
+                    },
+                ],
+            ]
+        },
     ]
 
 export function getCurrentPuzzle() {

@@ -1318,6 +1318,177 @@ export const puzzles =
                 ],
             ]
         },
+        {
+            "Id": "43",
+            "Name": "Poet",
+            "Date": "8/10/2024",
+            "Answer": "Andy",
+            "Hints": [
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "This is the proper phonetics for Waluigi's wæ̃̂ːː cry"
+                    },
+                ],
+                [
+		            {
+                        "User": "Suspect",
+                        "Text": "When big Sacha came 'round just to put him down##Corvus turned into a clown##And no girl ever wants to dance##With a gamer who went and pissed his pants"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "I'm so down skibidi :sadge:"
+                    },
+                ],
+            ]
+        },
+        {
+            "Id": "44",
+            "Name": "Burger Week",
+            "Date": "8/11/2024",
+            "Answer": "Sacha",
+            "Hints": [
+                [
+		            {
+                        "User": "Suspect",
+                        "Text": "im making, vegan burger tonight :may_blush:"
+                    },
+                ],
+                [
+                    {
+                        "User": "Witness",
+                        "Text": "where could someone go abotu purchasing a burner phone"
+                    },
+                    {
+                        "User": "Suspect",
+                        "Text": "i read \"burger phone\" and was rlly interested"
+                    }
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "i NEED to know how fast food tastes like when things like \"laws\" and \"regulations\" don't get in the way of a burger"
+                    },
+                ],
+            ]
+        },
+        {
+            "Id": "45",
+            "Name": "Burger Week Day 2",
+            "Date": "8/12/2024",
+            "Answer": "Panned",
+            "Hints": [
+                [
+		            {
+                        "User": "Suspect",
+                        "Text": "Wtf##New Frieren had big slut burger"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "She burger on my fries til I’m lovin it"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "Also when I eat burgers I use a fork and knife"
+                    }
+                ],
+            ]
+        },
+        {
+            "Id": "46",
+            "Name": "Burger Week Day 3",
+            "Date": "8/13/2024",
+            "Answer": "Maki",
+            "Hints": [
+                [
+		            {
+                        "User": "Suspect",
+                        "Text": "i wouldn’t be against a burger but no one sells one this early"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "anybody here fuck with onion rings and bbq sauce on their burgers"
+                    },
+                ],
+                [
+                    {
+                        "User": "Witness",
+                        "Text": "american cheese is disgusting though"
+                    },
+                    {
+                        "User": "Suspect",
+                        "Text": "not on a smash burger##that’s where it belongs"
+                    }
+                ],
+            ]
+        },
+        {
+            "Id": "47",
+            "Name": "Burger Week Day 4",
+            "Date": "8/14/2024",
+            "Answer": "Cammy",
+            "Hints": [
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "the burgers in the US are alright but the fries suck"
+                    },
+                ],
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "Next time someone fucks up my burger order I am gonna start doing acts of evil"
+                    }
+                ],
+                [
+		            {
+                        "User": "Suspect",
+                        "Text": "I'll only it it if the burger contains ground Jimmy beast"
+                    },
+                ],
+                
+            ]
+        },
+        {
+            "Id": "48",
+            "Name": "Burger Week Finale",
+            "Date": "8/15/2024",
+            "Answer": "Toto",
+            "Hints": [
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "\"this burger sucks\" yeah man we're at a chinese restaurant. i wonder why it might suck"
+                    },
+                ],
+                
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "also i ordered mr beast burger three times a few years ago and did not receive my burger any of those times"
+                    }
+                ],
+                [
+                    {
+                        "User": "Witness",
+                        "Text": "the fuck is a tulpa"
+                    },
+		            {
+                        "User": "Suspect",
+                        "Text": "this fucking guy doesnt know about burger tulpa"
+                    },
+                ],
+                
+            ]
+        },
     ]
 
 export function getCurrentPuzzle() {
@@ -1355,7 +1526,7 @@ export function getPuzzleById(id) {
         var today = new Date(new Date().toLocaleString("en-US", {
             timeZone: "America/Los_Angeles"
           }))
-        if(puzzles[i].Id === id && puzzleDate <= today){
+        if(puzzles[i].Id === id /*&& puzzleDate <= today*/){
             return puzzles[i];
         }
     }

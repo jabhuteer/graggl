@@ -1526,7 +1526,7 @@ export function getPuzzleById(id) {
         var today = new Date(new Date().toLocaleString("en-US", {
             timeZone: "America/Los_Angeles"
           }))
-        if(puzzles[i].Id === id /*&& puzzleDate <= today*/){
+        if(puzzles[i].Id === id && puzzleDate <= today){
             return puzzles[i];
         }
     }

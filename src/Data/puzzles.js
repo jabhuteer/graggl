@@ -1491,6 +1491,32 @@ export const puzzles =
         },
         {
             "Id": "49",
+            "Name": "I Forgot to Make a Graggl Today So Here's This",
+            "Date": "8/16/2024",
+            "Answer": "Andy",
+            "Hints": [
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "A graggle rave at the graggle club would be more boring than dash con"
+                    },
+                ],
+                [
+		            {
+                        "User": "Suspect",
+                        "Text": "Graggl workers rights when, they deserve maximum work hours too"
+                    },
+                ],
+                [
+		            {
+                        "User": "Witness",
+                        "Text": "To unlock the last hint please subscribe to Graggl premium"
+                    },
+                ],
+            ]
+        },
+        {
+            "Id": "50",
             "Name": "Video Games",
             "Date": "8/17/2024",
             "Answer": "Cammy",
@@ -1526,7 +1552,7 @@ export const puzzles =
             ]
         },
         {
-            "Id": "50",
+            "Id": "51",
             "Name": "Fighting",
             "Date": "8/18/2024",
             "Answer": "Liz",

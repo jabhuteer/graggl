@@ -1489,6 +1489,70 @@ export const puzzles =
                 
             ]
         },
+        {
+            "Id": "49",
+            "Name": "Video Games",
+            "Date": "8/17/2024",
+            "Answer": "Cammy",
+            "Hints": [
+                [
+                    {
+                        "User": "Witness",
+                        "Text": "We call the game mid now but it's also almost 12 years old at this point lmao"
+                    },
+                    {
+                        "User": "Suspect",
+                        "Text": "skyrim was mid 12 years ago too"
+                    },
+                ],
+                
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "they should put me up on stage so i can throw up over the developer mid trailer"
+                    }
+                ],
+                [
+                    {
+                        "User": "Witness",
+                        "Text": "nintendo directs are almost purpose-built to be sleep"
+                    },
+		            {
+                        "User": "Suspect",
+                        "Text": "It’s to try and placate smash fans so they don’t go out pillaging and shit"
+                    },
+                ],
+                
+            ]
+        },
+        {
+            "Id": "50",
+            "Name": "Fighting",
+            "Date": "8/18/2024",
+            "Answer": "Liz",
+            "Hints": [
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "Why are you getting Ori 2, have you been having trouble sleeping?"
+                    },
+                ],
+                
+                [
+                    {
+                        "User": "Suspect",
+                        "Text": "man##being toxic on the internet is fun ngl"
+                    }
+                ],
+                [
+		            {
+                        "User": "Suspect",
+                        "Text": "Gonna turn into the reddit guy who goes out at night and fights a random person"
+                    },
+                ],
+                
+            ]
+        },
     ]
 
 export function getCurrentPuzzle() {
